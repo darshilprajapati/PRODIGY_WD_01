@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #6a0dad;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    margin: 0 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    padding: 100px 20px;
+    background: #282846;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.hero h1 {
+    font-size: 40px;
+}
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #6a0dad;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #4b0082;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.feature-box {
+    background: #333;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+.feature-box:hover {
+    background: #444;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #6a0dad;
+    font-size: 18px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
